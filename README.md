@@ -4,3 +4,11 @@
 # Thematisch gegliederte Spiegelung der Masterarbeit als Jupyter Notebooks
 **Berliner Hochschule für Technik | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
+
+## Vorwort
+Zur besseren Lesbarkeit wird in der vorliegenden Arbeit auf die gleichzeitige Verwendung männlicher und weiblicher Sprachformen verzichtet. Es wird das generische Maskulinum verwendet, wobei beide Geschlechter gleichermaßen gemeint sind.
+
+Thematik Excel Erweiterung Anwendungsbeispiel 2
+
+## Thematik
+Spiegelung der gebundenen Abgabe 
