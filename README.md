@@ -3,7 +3,7 @@
 
 # Masterarbeit: Erweiterung der Ingenieuranwendungen von Excel mit Hilfe der Programmiersprache Python
 **Berliner Hochschule für Technik | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
-Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
+Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
 ## Vorwort
 Die Abgabe der Abschlussarbeit erfolgt als gebundenes Exemplar und als interaktive Arbeitsblätter mit der Programmierumgebung Jupyter Notebook. Diese sind als inhaltsgleiche Spiegelung der gebundenen Ausgabe zu verstehen und können als alleinstehendes Dokument gelesen werden. 
