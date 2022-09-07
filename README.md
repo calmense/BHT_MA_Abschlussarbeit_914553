@@ -6,10 +6,12 @@
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
 
 ## Vorwort
+Die Abgabe der Abschlussarbeit erfolgt als gebundenes Exemplar und als interaktive Arbeitsblätter mit der Programmierumgebung Jupyter Notebook. Diese sind als inhaltsgleiche Spiegelung der gebundenen Ausgabe zu verstehen und können als alleinstehendes Dokument gelesen werden. 
+
 Zur besseren Lesbarkeit wird in der vorliegenden Arbeit auf die gleichzeitige Verwendung männlicher und weiblicher Sprachformen verzichtet. Es wird das generische Maskulinum verwendet, wobei beide Geschlechter gleichermaßen gemeint sind.
 
-Thematik Excel Erweiterung Anwendungsbeispiel 2
-Spiegelung der gebundenen Abgabe 
 
 ## Thematik
 Im Ingenieurbereich und speziell im Bauwesen lassen sich viele Berechnungen mit Hilfe von Exceldatenblättern automatisieren. Excel bietet hierzu eine Vielzahl von Möglichkeiten insbesondere durch die Nutzung von Verknüpfungen und einfachen Programmierungen in der Befehlszeile. Dieses Vorgehen kommt aber bei etwas komplexeren Berechnungen oder Parameterstudien an Grenzen. Hierzu gibt es in Excel die Möglichkeit eigene Programmierungen mit VBA zu erstellen. Eine weitere Möglichkeit ergibt sich, wenn die Programmierungen außerhalb der Excelumgebung erfolgen. Mit der Unterstützung von Python können Werte aus Exceldatenblättern herausgelesen, verarbeitet und die Ergebnisse wieder in ein Datenblatt zurückgeschrieben werden. Diese Methode verbindet geschickt den Freiraum einer Programmiersprache mit der übersichtlichen Darstellung von Daten in Excel.
+
+Zusätzlich wurde im Laufe der Bearbeitung der Anwendungsbereich erweitert, sodass neben Excel weitere Schnittstellen erkundet und zum Thema dieser Abschlussarbeit gemacht wurden. 
