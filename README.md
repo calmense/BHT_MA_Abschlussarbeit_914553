@@ -2,7 +2,7 @@
 
 
 # Masterarbeit: Erweiterung der Ingenieuranwendungen von Excel mit Hilfe der Programmiersprache Python
-**Berliner Hochschule für Technik | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
+**Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
 ## Vorwort
