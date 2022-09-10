@@ -6,4 +6,4 @@
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
 
 Link zum Schraubenbemessungsprogramm: <br>
-[https://calmense-schraubenbemessung-ec-schraubenbemessung-ec5-87-wv3v0b.streamlitapp.com/]
+[https://c-02-schraubenbemessung-ec5-87schraubenbemessung-ec5-87-bixfit.streamlitapp.com/]
