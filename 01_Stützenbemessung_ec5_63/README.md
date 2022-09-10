@@ -3,3 +3,6 @@
 # Stützenbemessung nach EC5 Abs. 6.3
 **Berliner Hochschule für Technik | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
+
+
+Kurzbeschreibung des Programms folgt ..
