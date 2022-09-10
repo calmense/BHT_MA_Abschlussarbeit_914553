@@ -5,6 +5,9 @@
 **Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
+![image_logo_main_2](https://user-images.githubusercontent.com/104301991/189487021-6494d663-3491-4fb2-963c-373cf38f01c6.png)
+
+
 ## Vorwort
 Die Abgabe der Abschlussarbeit erfolgt als gebundenes Exemplar und als interaktive Arbeitsblätter mit der Programmierumgebung Jupyter Notebook. Diese sind als inhaltsgleiche Spiegelung der gebundenen Ausgabe zu verstehen und können als alleinstehendes Dokument gelesen werden. Die Arbeitsblätter im Ordner *00_Jupyter_Notebooks* sind thematisch gegliedert und beschreiben aufbauend die Python-Algorithmen, die in den Anwendungsbeispielen in den Ordnern *01_Stützenbemessung_ec5_63* und *02_Schraubenbemessung_ec5_87* verwendet werden. Beim Herunterladen dieses Repositoriums muss die Ordnerstruktur beibehalten werden, damit die relativen Pfadbezüge richtig bestehen bleiben. 
 
