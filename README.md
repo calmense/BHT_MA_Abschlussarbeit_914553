@@ -5,7 +5,7 @@
 **Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
-![image_logo_main_2](https://user-images.githubusercontent.com/104301991/189487021-6494d663-3491-4fb2-963c-373cf38f01c6.png)
+![image_logo_main_2](https://user-images.githubusercontent.com/104301991/189487050-664e7cc1-0367-4005-99b6-c461895629c0.png)
 
 
 ## Vorwort
