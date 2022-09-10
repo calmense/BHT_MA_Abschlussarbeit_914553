@@ -3,11 +3,11 @@
 ###########################################################################
 
 # Bibliotheken
-from math import pi, sqrt
+import streamlit as st
 import pandas as pd
+from math import pi, sqrt
 import plotly.express as px
 import plotly.graph_objects as go
-import streamlit as st
 from schraubenbemessung_ec5_87_functions import get_length, ec5_87_tragfähigkeit_vg
 
 # HTML-Formattierung
@@ -23,15 +23,7 @@ L_kled = ['ständig', 'lang', 'mittel', 'kurz', 'sehr kurz']
 L_kmod = [[0.6, 0.7, 0.8, 0.9, 1.1], [
     0.6, 0.7, 0.8, 0.9, 1.1], [0.5, 0.55, 0.65, 0.7, 0.9]]
 L_rho_k = [380, 350, 410, 380, 430, 410, 450, 430]
-L_holzart = [
-    'GL24h',
-    'GL24c',
-    'GL28h',
-    'GL28c',
-    'GL32h',
-    'GL32c',
-    'GL36h',
-    'GL36c']
+L_holzart = ['GL24h', 'GL24c', 'GL28h', 'GL28c', 'GL32h', 'GL32c', 'GL36h', 'GL36c']
 L_di_axial = [[], [], [], []]
 L_di_scher = [[], [], [], []]
 L_no = [[], [], [], []]
