@@ -9,7 +9,7 @@ Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
 
 ## Vorwort
-Die Abgabe der Abschlussarbeit erfolgt als gebundenes Exemplar und als interaktive Arbeitsblätter mit der Programmierumgebung Jupyter Notebook. Diese sind als inhaltsgleiche Spiegelung der gebundenen Ausgabe zu verstehen und können als alleinstehendes Dokument gelesen werden. Die Arbeitsblätter im Ordner *00_Jupyter_Notebooks* sind thematisch gegliedert und beschreiben aufbauend die Python-Algorithmen, die in den Anwendungsbeispielen in den Ordnern *01_Stützenbemessung_ec5_63* und *02_Schraubenbemessung_ec5_87* verwendet werden. Beim Herunterladen dieses Repositoriums muss die Ordnerstruktur beibehalten werden, damit die relativen Pfadbezüge richtig bestehen bleiben. 
+Die Abgabe der Abschlussarbeit erfolgt als gebundenes Exemplar und als interaktive Arbeitsblätter mit der Programmierumgebung ***Jupyter Notebook***. Diese sind als inhaltsgleiche Spiegelung der gebundenen Ausgabe zu verstehen und können als alleinstehendes Dokument gelesen werden. Die Arbeitsblätter im Ordner *00_Jupyter_Notebooks* sind thematisch gegliedert und beschreiben aufbauend die Python-Algorithmen, die in den Anwendungsbeispielen in den Ordnern ***01_Stützenbemessung_ec5_63*** und ***02_Schraubenbemessung_ec5_87*** verwendet werden. Beim Herunterladen dieses Repositoriums muss die Ordnerstruktur beibehalten werden, damit die relativen Pfadbezüge richtig bestehen bleiben. 
 
 Zur besseren Lesbarkeit wird in der vorliegenden Arbeit auf die gleichzeitige Verwendung männlicher und weiblicher Sprachformen verzichtet. Es wird das generische Maskulinum verwendet, wobei beide Geschlechter gleichermaßen gemeint sind.
 
