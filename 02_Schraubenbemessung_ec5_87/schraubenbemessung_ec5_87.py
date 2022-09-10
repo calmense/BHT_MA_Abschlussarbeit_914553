@@ -238,7 +238,7 @@ if betrachtung == 'Bemessungstabellen':
                 st.write(nw[1])
             else:
 
-                # ________________________________Tabelle________________________________
+                # _______________________Tabelle_______________________________
                 ###############################################################
 
                 tabelle = L_table[n]
@@ -308,7 +308,7 @@ if betrachtung == 'Bemessungstabellen':
                     width=1100, height=600, title_text='Tabelle')
                 st.write(tabelle)
 
-                # ________________________________Diagramme________________________________
+                # _______________________Diagramme_____________________________
                 ###############################################################
 
                 # Erzeugung von 2 Diagrammen für die Axial- und
