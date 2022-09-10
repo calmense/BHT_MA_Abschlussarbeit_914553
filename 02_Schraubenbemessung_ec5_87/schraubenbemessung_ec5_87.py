@@ -129,13 +129,13 @@ with st.sidebar:
 ###########################################################################
 
 # Text
-#st.image('image_header_vg.png')
+st.image('image_header_vg.png')
 st.title('Bemessung von Vollgewindeschrauben')
 st.write('DIN EN 1995-1-1 Abs. 8 & ETA-11/0190')
 st.write(
     'Dieses Programm ermittelt die Tragfähigkeiten von Vollgewindeschrauben hinsichtlich einer Axial- und Scherbeanspruchung. \
         Die herstellerspezifischen Kennwerte beziehen sich auf eine **Würth ASSY plus VG** als Senkkopfausführung.')
-#st.image('image_vg.png')
+st.image('image_vg.png')
 st.subheader('Nachweisführung')
 betrachtung = st.selectbox('', ('Bemessungstabellen', 'Einzelnachweis'))
 
