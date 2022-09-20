@@ -1,41 +1,10 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 14 13:45:48 2022
-
-@author: Cal.Mense
-"""
-
+# Schraubenbemessungsprogramm: Funktionen - Axial- und Schertragfähigkeit von Würth Vollgewindeschrauben
+# Bibliotheken
 import streamlit as st
 import pandas as pd
 from math import sqrt, pi, cos, sin
 
-# cd C:\Users\Cal.Mense\OneDrive - Arup\01_Privat\03_Masterarbeit\03_Skripting\00_neu\02_Tutorials\01_Anwendungsbeispiele\02_Schraubenbemessung_ec5_81
-# streamlit run schraubenbemessung_ec5_87.py
-
-# verfügbaren Längen der Schrauben
-
-
-def get_length(hersteller, d):
-
-    L_d = [6, 8, 10, 12]
-    index = L_d.index(d)
-    if hersteller == 'Würth':
-        #Würth
-        L_L = [[120,140,160,180,200,220,240,260],
-               [120,140,160,180,200,220,240,260,280,300,330,380,430,480,530,580],
-               [120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,430,480,530,580,600,650,700,750,800],
-               [120,140,160,180,200,220,240,260,280,300,380,480,600]]
-
-    elif hersteller == 'Spax':
-        #SPAX
-        L_L = [[120,140,160,180,200,220,240,260,280,300,350,400,450,500,550,600],
-               [120,140,160,180,200,220,240,260,280,300,350,400,450,500,550,600],
-               [120,160,200,220,240,260,280,300,350,400,450,500,550,600,700,800],
-               [200,240,280,300,350,400,450,500,550,600]]
-
-    return L_L, L_L[index]
-
-
+# Funktion
 def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
 
     # Nachweisführung
@@ -188,10 +157,10 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
             F_vk2 = round(f_hk * l_ef * d, 2)
             F_vk3 = round((f_hk * t_1 * d) / 2 * (sqrt(1 + 2 * (1 + l_ef / t_1 +
                           (l_ef / t_1)**2) + (l_ef / t_1)**2) - (1 + l_ef / t_1)) + F_axrk / 4, 2)
-            F_vk4 = 1.05 * (f_hk * t_1 * d) / (3) * (sqrt(4 + \
-                            (12 * M_yrk) / (f_hk * t_1**2 * d)) - 1) + F_axrk / 4
-            F_vk5 = 1.05 * (f_hk * l_ef * d) / (3) * (sqrt(4 + \
-                            (12 * M_yrk) / (f_hk * l_ef**2 * d)) - 1) + F_axrk / 4
+            F_vk4 = 1.05 * (f_hk * t_1 * d) / (3) * (sqrt(4 +
+                                                          (12 * M_yrk) / (f_hk * t_1**2 * d)) - 1) + F_axrk / 4
+            F_vk5 = 1.05 * (f_hk * l_ef * d) / (3) * (sqrt(4 +
+                                                           (12 * M_yrk) / (f_hk * l_ef**2 * d)) - 1) + F_axrk / 4
             F_vk6 = 1.15 * sqrt(2 * M_yrk * f_hk * d) + F_axrk / 4
             F_vrk = min(F_vk1, F_vk2, F_vk3, F_vk4, F_vk5, F_vk6)
 
@@ -241,3 +210,24 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
             F_vRk = round(F_vrk / 1000, 2)
 
         return round(F_axRk, 2), F_vRk, nw
+
+# Funktion: verfügbaren Längen der Schrauben
+def get_length(hersteller, d):
+
+    L_d = [6, 8, 10, 12]
+    index = L_d.index(d)
+    if hersteller == 'Würth':
+        # Würth
+        L_L = [[120,140,160,180,200,220,240,260],
+               [120,140,160,180,200,220,240,260,280,300,330,380,430,480,530,580],
+               [120,140,160,180,200,220,240,260,280,300,320,340,360,380,400,430,480,530,580,600,650,700,750,800],
+               [120,140,160,180,200,220,240,260,280,300,380,480,600]]
+
+    elif hersteller == 'Spax':
+        # SPAX
+        L_L = [[120,140,160,180,200,220,240,260,280,300,350,400,450,500,550,600],
+               [120,140,160,180,200,220,240,260,280,300,350,400,450,500,550,600],
+               [120,160,200,220,240,260,280,300,350,400,450,500,550,600,700,800],
+               [200,240,280,300,350,400,450,500,550,600]]
+
+    return L_L, L_L[index]
