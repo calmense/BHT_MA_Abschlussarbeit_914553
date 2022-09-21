@@ -2,10 +2,10 @@
 
 
 # Schraubenbemessung nach EC5 Abs. 8.7
-**Berliner Hochschule für Technik | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
-Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
+**Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
+Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 | Master Thesis: Ingenieuranwendungen mit Python <br>
 
-![image](https://user-images.githubusercontent.com/104301991/191498957-3b374ce6-4664-42ab-9612-8fdba420f44d.png)
+![image_workflow_vg](https://user-images.githubusercontent.com/104301991/191502954-34ba3c34-612d-46c4-a914-cbf472d94f7b.png)
 
 Der nachfolgende Link führt zu einem Web-basierten Bemessungstool für Vollgewindeschrauben, welches mit der Bibliothek *Streamlit* die Tragfähigkeiten von Holzschrauben der Firma Würth ermittelt. Das Programm ist so konzipiert, dass die Bemessung in drei Schritten erfolgt.
 
@@ -19,5 +19,4 @@ Der nachfolgende Link führt zu einem Web-basierten Bemessungstool für Vollgewi
 [https://c-02-schraubenbemessung-ec5-87schraubenbemessung-ec5-87-bixfit.streamlitapp.com/]
 
 ---
-Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.) <br>
-Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 | September 2022
+Master Thesis: Ingenieuranwendungen mit Python | September 2022
