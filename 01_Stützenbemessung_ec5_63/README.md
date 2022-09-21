@@ -4,9 +4,9 @@
 **Berliner Hochschule für Technik | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
 
-![image_workflow_st](https://user-images.githubusercontent.com/104301991/191501570-697287ea-ff33-4dbd-9d0f-df380f6b5768.png)
-
 Durch die Verknüpfung aus Excel und Python entsteht ein leistungsstarkes Stützenbemessungsprogramm, welches einen typischen Arbeitsablauf vom **Lastabtrag**, der **Dimensionierung** der Stützen und der nachfolgenden **Dokumentation** abbildet. Zur Bemessung stehen gemäß Eurocode 5 das *Ersatzstabverfahren* und die *Bemessung nach der Theorie II. Ordnung* zur Verfügung.
+
+![image_workflow_st](https://user-images.githubusercontent.com/104301991/191501771-5a0ea79c-41b0-4e08-95b3-2269bd88cb0f.png)
 
 Durch die Einbindung des Nutzers durch Eingabeparameter und die Ausgabe von Zwischenergebnissen wird eine Interaktion und die Kontrolle des gesamten Vorgangs erzielt. Die Nutzeroberfläche von Excel ermöglicht, dass die Stützenparameter individuell angepasst und die Zwischen- und Endergebnissen direkt nebeneinander und übersichtlich überblickt werden können. 
 
