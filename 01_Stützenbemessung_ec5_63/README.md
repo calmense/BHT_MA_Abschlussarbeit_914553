@@ -1,8 +1,8 @@
 ![Logo_2](https://user-images.githubusercontent.com/104301991/191499171-9a68aaef-343b-443f-b290-cdbcfdd5f3e6.png)
 
 # Stützenbemessung nach EC5 Abs. 6.3
-**Berliner Hochschule für Technik | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
-Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense | Master Thesis: Ingenieuranwendungen mit Python <br>
+**Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
+Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
 Durch die Verknüpfung aus Excel und Python entsteht ein leistungsstarkes Stützenbemessungsprogramm, welches einen typischen Arbeitsablauf vom **Lastabtrag**, der **Dimensionierung** der Stützen und der nachfolgenden **Dokumentation** abbildet. Zur Bemessung stehen gemäß Eurocode 5 das *Ersatzstabverfahren* und die *Bemessung nach der Theorie II. Ordnung* zur Verfügung.
 
@@ -13,5 +13,4 @@ Durch die Einbindung des Nutzers durch Eingabeparameter und die Ausgabe von Zwis
 Zusätzlich kann mit der Eingabe von Optimierungsparametern hinsichtlich der Holzgüte und den Querschnittsabmessungen eine Optimierungsfunktion ausgeführt werden, die iterativ und automatisch die Parameter anpasst, bis die gewünschten Werte erzielt sind. 
 
 ---
-Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.) <br>
-Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 | September 2022
+Master Thesis: Ingenieuranwendungen mit Python | September 2022
