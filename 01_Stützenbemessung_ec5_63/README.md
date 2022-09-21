@@ -6,7 +6,7 @@ Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
 Durch die Verknüpfung aus Excel und Python entsteht ein leistungsstarkes Stützenbemessungsprogramm, welches einen typischen Arbeitsablauf vom **Lastabtrag**, der **Dimensionierung** der Stützen und der nachfolgenden **Dokumentation** abbildet. Zur Bemessung stehen gemäß Eurocode 5 das *Ersatzstabverfahren* und die *Bemessung nach der Theorie II. Ordnung* zur Verfügung.
 
-![image_workflow_st](https://user-images.githubusercontent.com/104301991/191501771-5a0ea79c-41b0-4e08-95b3-2269bd88cb0f.png)
+![image_workflow_st](https://user-images.githubusercontent.com/104301991/191502422-3a51f08c-994b-489b-9ebf-17cf8ff20244.png)
 
 Durch die Einbindung des Nutzers durch Eingabeparameter und die Ausgabe von Zwischenergebnissen wird eine Interaktion und die Kontrolle des gesamten Vorgangs erzielt. Die Nutzeroberfläche von Excel ermöglicht, dass die Stützenparameter individuell angepasst und die Zwischen- und Endergebnissen direkt nebeneinander und übersichtlich überblickt werden können. 
 
