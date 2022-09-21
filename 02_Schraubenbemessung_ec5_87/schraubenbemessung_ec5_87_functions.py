@@ -10,8 +10,7 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
     # Nachweisführung
     nw = []
 
-    # ====================Fehlermeldungen=================
-    # ====================================================
+    #__________Fehlermeldungen__________
 
     if t_Blech != 0 and t_1 != 0 and t_2 != 0:
         fehler = "Error: Es werden keine zweischnittigen Verbindungen berechnet."
@@ -58,8 +57,7 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
         F_vRk = 0
         return F_axRk, F_vRk, nw
 
-    # Holz-Stahl-Verbindungen
-
+    ## Holz-Stahl-Verbindungen
     elif t_Blech != 0 and t_1 == 0 and t_2 != 0:
         fehler = "Bei Stahl-Holz Verbindungen darf die Seitenholzdicke 1 nicht gleich null sein."
         hinweis = "Hinweis: t_Blech <> 0 and t_1 = 0"
@@ -70,8 +68,8 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
         return F_axRk, F_vRk, nw
 
     else:
-        # ====================Vorbereitung====================
-        # ====================================================
+        #__________Vorbereitung__________
+
         nw.append('success')
 
         # Listen
@@ -98,7 +96,7 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
         M_yrk = 0.15 * 600 * d**(2.6)
         f_hk = (0.082 * rho_k * d**(-0.3))
 
-        #mUmrechnung in Bogenmaß
+        # Umrechnung in Bogenmaß
         alph = alpha * pi / 180
 
         # Effektive Länge der Schraube
@@ -107,8 +105,7 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
         elif t_Blech == 0:
             l_ef = min(L - t_1, t_1)
 
-        # ====================Axialtragfähigkeit====================
-        # ==========================================================
+        #__________Axialtragfähigkeit__________
 
         # Ausziehwiderstand
         if alpha <= 45:
@@ -118,13 +115,13 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
 
         F_axrk1 = (k_axk * f_axk * d * l_ef) * (rho_k / 350)**0.8  # N
 
-        ###Umrechnung in Kilonewton
+        # Umrechnung in Kilonewton
         F_axRk1 = F_axrk1 / 1000  # kN
 
         # Kopfdurchziehwiderstand
         F_headrk = f_head * (d_h)**2 * (rho_k / 350)**0.8  # N
 
-        ###Umrechnung in Kilonewton
+        # Umrechnung in Kilonewton
         F_headRk = F_headrk / 1000  # kN
 
         # Zugfestigkeit
@@ -136,18 +133,17 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
             F_axRk = min(F_axRk1, F_tRk)
             nw.append('A: o. Kopfdurchzieh')
 
-            ###Umrechnung in Kilonewton
+            # Umrechnung in Kilonewton
             F_axrk = min(F_axrk1, F_tRk * 1000)
 
         elif t_Blech == 0 or t_1 < 4 * d:
             F_axRk = min(F_axRk1, F_headRk, F_tRk)
             nw.append('A: m. Kopfdurchzieh')
 
-            ###Umrechnung in Kilonewton
+            # Umrechnung in Kilonewton
             F_axrk = min(F_axrk1, F_headrk, F_tRk * 1000)
 
-        # ====================Schertragfähigkeit====================
-        # ==========================================================
+        #__________Schertragfähigkeit__________
 
         # einschnittige Holz-Holz-Verbindung
         if t_Blech == 0:
@@ -164,7 +160,7 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
             F_vk6 = 1.15 * sqrt(2 * M_yrk * f_hk * d) + F_axrk / 4
             F_vrk = min(F_vk1, F_vk2, F_vk3, F_vk4, F_vk5, F_vk6)
 
-            ###Umrechnung in Kilonewton
+            # Umrechnung in Kilonewton
             F_vRk1 = round(F_vk1 / 1000, 2)
             F_vRk2 = round(F_vk2 / 1000, 2)
             F_vRk3 = round(F_vk3 / 1000, 2)
@@ -183,7 +179,7 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
             F_vk3 = 2.3 * sqrt(M_yrk * f_hk * d) + F_axrk / 4
             F_vrk = min(F_vk1, F_vk2, F_vk3)
 
-            ###Umrechnung in Kilonewton
+            # Umrechnung in Kilonewton
             F_vRk1 = round(F_vk1 / 1000, 2)
             F_vRk2 = round(F_vk2 / 1000, 2)
             F_vRk3 = round(F_vk3 / 1000, 2)
@@ -200,7 +196,7 @@ def ec5_87_tragfähigkeit_vg(Hersteller, d, L, t_1, t_2, t_Blech, rho_k, alpha):
             F_vk2 = 1.15 * sqrt(2 * M_yrk * f_hk * d) + F_axrk / 4
             F_vrk = min(F_vk1, F_vk2)
 
-            ###Umrechnung in Kilonewton
+            # Umrechnung in Kilonewton
             F_vRk1 = round(F_vk1 / 1000, 2)
             F_vRk2 = round(F_vk2 / 1000, 2)
             F_vRk3 = '-'

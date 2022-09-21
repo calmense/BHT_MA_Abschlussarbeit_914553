@@ -28,8 +28,7 @@ L_no = [[], [], [], []]
 L_d = [6, 8, 10, 12]
 
 
-# _______________________________Seitenleiste_______________________________
-###########################################################################
+#__________Seitenleiste__________
 
 with st.sidebar:
 
@@ -77,8 +76,7 @@ with st.sidebar:
     index = L_holzart.index(holzart)  # Rohdichte des Holzes (Index)
     rho_k = L_rho_k[index]  # Rohdichte des Holzes
 
-    # _______________________Berechnung der Tragfähigkeit_______________________
-    ###########################################################################
+    #__________Berechnung der Tragfähigkeit__________
 
     if 'Einlesen':
 
@@ -112,8 +110,7 @@ with st.sidebar:
         L_dict = [df_d6, df_d8, df_d10, df_d12]
 
 
-# ________________________________Hauptseite________________________________
-###########################################################################
+#__________Hauptseite__________
 
 # Text
 st.image('image_header_vg.png')
@@ -134,8 +131,7 @@ if nachweisführung == 'Bemessungswerte':
     with col2:
         st.latex('\gamma_{m} = ' + str(gamma))
 
-# ____________________________Bemessungstabelle_____________________________
-###########################################################################
+#__________Bemessungstabelle__________
 
 if betrachtung == 'Bemessungstabellen':
 
@@ -201,14 +197,13 @@ if betrachtung == 'Bemessungstabellen':
                 st.write(nw[1])
             else:
 
-                # ________________________________Tabelle________________________________
-                ###########################################################################
+                #__________Tabelle__________
 
                 tabelle = L_table[n]
 
                 # Tabellen
                 # Dynamische Anpassung der Farben entsprechend der Filter
-                ##Filter (Tragfähigkeit, Längen, Tragfähigkeit & Längen)
+                # Filter (Tragfähigkeit, Längen, Tragfähigkeit & Längen)
                 for i in range(len(L_Li)):
 
                     if (options_filter == ["Tragfähigkeit", "Längen"] or options_filter == ["Längen", "Tragfähigkeit"]):
@@ -266,8 +261,7 @@ if betrachtung == 'Bemessungstabellen':
                     width=1100, height=600, title_text='Tabelle')
                 st.write(tabelle)
 
-                # ________________________________Diagramme________________________________
-                ###########################################################################
+                #__________Diagramme__________
 
                 # Erzeugung von 2 Diagrammen für die Axial- und Schertragfähigkeit
                 for m, Frd_i in enumerate([L_di_axiali, L_di_scheri]):
@@ -348,19 +342,16 @@ if betrachtung == 'Bemessungstabellen':
                             L_colors_bar[m].append(L_colors[m])
 
                     # Erzeugen der Diagramme
-                    fig.update_traces(
-                        marker_color=L_colors_bar[m], textfont=L_font_prozent[m])
+                    fig.update_traces(marker_color=L_colors_bar[m], textfont=L_font_prozent[m])
                     fig.update_layout(annotations=annotations)
                     fig.update_yaxes(title_text="Tragfähigkeit [kN]")
                     fig.update_xaxes(
                         showticklabels=False, tickangle=90, title_text="Längen [mm]", type='linear')
                     fig.update_layout(barmode='group', autosize=False)
-                    fig.update_traces(hovertemplate="<br>".join(
-                        ["%{L_hover[m]} = %{y} kN"]))
                     st.plotly_chart(fig)
 
-# ______________________________Einzelnachweise______________________________
-###########################################################################
+#__________Einzelnachweise__________
+
 
 if betrachtung == 'Einzelnachweis':
 
@@ -417,8 +408,7 @@ if betrachtung == 'Einzelnachweis':
             st.latex('f_{tensk} = ' + str(f_tensk) + ' N/mm^2')
             st.latex('M_{yRk} = ' + str(M_yrk) + ' Nmm')
 
-        # ______________________________Ausziehwiderstand______________________________
-        ###########################################################################
+        #__________Ausziehwiderstand__________
 
         st.subheader('Ausziehwiderstand')
         # Ausziehwiderstand
@@ -464,9 +454,8 @@ if betrachtung == 'Einzelnachweis':
             st.latex(r'''  F_{axRk} = min( ''' + rf'''{F_axRk1}, ''' +
                      rf'''{F_headRk}, ''' + rf'''{F_tRk})  = ''' + str(F_axRk) + ' kN')
 
-        # ____________________________Schertragfähigkeit_____________________________
-        ###########################################################################
-
+        #__________Schertragfähigkeit__________
+        
         # Holz-Holz
         st.subheader('Schertragfähigkeit')
         if t_Blech == 0:
@@ -505,7 +494,7 @@ if betrachtung == 'Einzelnachweis':
             st.latex(r'''  F_{vRk} = min( ''' + rf'''{F_vRk1}, ''' + rf'''{F_vRk2}, ''' + rf'''{F_vRk3}, ''' +
                      rf'''{F_vRk4}, ''' + rf'''{F_vRk5}, ''' + rf'''{F_vRk6})  = ''' + str(F_vRk) + ' kN')
 
-        ## Holz-Stahl (einschnittig)
+        # Holz-Stahl (einschnittig)
         # dickes Stahlblech
         elif t_Blech >= d:
 
@@ -552,13 +541,12 @@ if betrachtung == 'Einzelnachweis':
             st.latex(r'''  F_{vRk} = min( ''' + rf'''{F_vRk1}, ''' +
                      rf'''{F_vRk2}) = ''' + str(F_vRk) + ' kN')
 
-        # ____________________________Nachweise_____________________________
-        ###########################################################################
-
+        #__________Nachweise__________
+        
         st.subheader('Nachweise')
         if nachweisführung == 'Bemessungswerte':
 
-            ## Nachweisführung: Bemessungswerte
+            # Nachweisführung: Bemessungswerte
             col1, col2 = st.columns(2, gap="small")
             with col1:
                 st.latex('Herausziehen')
@@ -575,7 +563,7 @@ if betrachtung == 'Einzelnachweis':
                 st.latex(r'''\eta_{vd} = \frac{F_{vEd}}{F_{vRd}} = ''' +
                          str(round(F_v*gamma/(F_vRk*k_mod), 2)))
 
-        ## Nachweisführung: charakteristisch
+        # Nachweisführung: charakteristisch
         else:
             col1, col2 = st.columns(2, gap="small")
             with col1:
