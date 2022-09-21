@@ -7,7 +7,7 @@ Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 <br>
 
 ![image_workflow_vg](https://user-images.githubusercontent.com/104301991/191503357-be3cdd22-543a-4be1-bdac-a882e1b201c0.png)
 
-Der folgende Link führt zu einem Web-basierten Bemessungstool für Vollgewindeschrauben, welches mit der Bibliothek *Streamlit* die Tragfähigkeiten von Holzschrauben der Firma Würth ermittelt. Das Programm ist so konzipiert, dass die Bemessung in drei Schritten erfolgt.
+Der folgende Link führt zu einem Web-basierten Bemessungstool für Vollgewindeschrauben, welches mit der Bibliothek *Streamlit* die Tragfähigkeiten von Holzschrauben der Firma Würth berechnet. Das Programm ist so konzipiert, dass die Bemessung in drei Schritten erfolgt.
 
 1)	Zunächst können in der Seitenleiste die Parameter hinsichtlich der Verbindung, der Einwirkung und der vorhandenen Bauteildicken eingegeben werden.
 
