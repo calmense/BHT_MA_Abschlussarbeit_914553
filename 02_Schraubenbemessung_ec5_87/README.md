@@ -5,7 +5,7 @@
 **Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.)** <br>
 Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553 | Master Thesis: Ingenieuranwendungen mit Python <br>
 
-![image_workflow_vg](https://user-images.githubusercontent.com/104301991/191502954-34ba3c34-612d-46c4-a914-cbf472d94f7b.png)
+![image_workflow_vg](https://user-images.githubusercontent.com/104301991/191503357-be3cdd22-543a-4be1-bdac-a882e1b201c0.png)
 
 Der nachfolgende Link führt zu einem Web-basierten Bemessungstool für Vollgewindeschrauben, welches mit der Bibliothek *Streamlit* die Tragfähigkeiten von Holzschrauben der Firma Würth ermittelt. Das Programm ist so konzipiert, dass die Bemessung in drei Schritten erfolgt.
 
