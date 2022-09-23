@@ -192,7 +192,6 @@ if betrachtung == 'Bemessungstabellen':
             else:
                 dict_header = {'values': [('L', '[mm]'),  ('F_axRk', '[kN]'), ('F_vRk', '[kN]')],
                             'align': 'center', 'font': {'size': 15, 'color': 'black'}, 'fill_color': grey, 'line_color': 'white'}
-                
             dict_cells = {'values': [L_Li,  L_di_axiali, L_di_scheri], 'height': 30, 'font': {'size': 15, 'color': 'black'},
                           'fill_color': [L_t_fill1, L_t_fill2, L_t_fill3]}
 
