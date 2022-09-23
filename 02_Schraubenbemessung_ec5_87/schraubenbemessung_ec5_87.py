@@ -12,6 +12,13 @@ st.set_page_config(layout="wide")
 st.markdown("""<style>
 [data-testid="stSidebar"][aria-expanded="false"] > div:first-child {width: 500px;}
 [data-testid="stSidebar"][aria-expanded="false"] > div:first-child {width: 500px;margin-left: -500px;}
+footer:after{
+    content:"Berliner Hochschule für Technik (BHT) | Konstruktiver Hoch- und Ingenieurbau (M.Eng.) | \
+    Ingenieurholzbau | Prof. Dr. Jens Kickler | Cal Mense 914553";
+    display:block;
+    position:relative;
+    color:grey;
+}
 </style>""",unsafe_allow_html=True)
 
 # Eingangsparameter
