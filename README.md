@@ -16,9 +16,9 @@ Zur besseren Lesbarkeit wird in der vorliegenden Arbeit auf die gleichzeitige Ve
 
 
 ## Thematik
-Im Ingenieurbereich und speziell im Bauwesen lassen sich viele Berechnungen mit Hilfe von Exceldatenblättern automatisieren. Excel bietet hierzu eine Vielzahl von Möglichkeiten insbesondere durch die Nutzung von Verknüpfungen und einfachen Programmierungen in der Befehlszeile. Dieses Vorgehen kommt aber bei etwas komplexeren Berechnungen oder Parameterstudien an Grenzen. Hierzu gibt es in Excel die Möglichkeit eigene Programmierungen mit VBA zu erstellen. Eine weitere Möglichkeit ergibt sich, wenn die Programmierungen außerhalb der Excelumgebung erfolgen. Mit der Unterstützung von Python können Werte aus Exceldatenblättern herausgelesen, verarbeitet und die Ergebnisse wieder in ein Datenblatt zurückgeschrieben werden. Diese Methode verbindet geschickt den Freiraum einer Programmiersprache mit der übersichtlichen Darstellung von Daten in Excel.
+Vor dem Hintergrund einer voranschreitenden Digitalisierung und Klimawandel steht in der Bauindustrie zunehmend die Forderung des nachhaltigen Bauens im Fokus. Die vorliegende Arbeit will dazu beitragen, mit der Unterstützung der Programmiersprache Python innovative Arbeitskonzepte zu entwickeln, die statische Berechnungen um ein Vielfaches effizienter gestalten. Hierzu werden herkömmliche Arbeitsmethoden wie das Arbeiten mit Excel aufgegriffen und anhand des Beispiels einer Stützenbemessung optimiert. Aus der Verknüpfung entsteht ein Stützenbemessungsprogramm, welches einen gesamten Arbeitsablauf, vom Lastabtrag, der Dimensionierung und Optimierung der Stützen und der nachfolgenden Dokumentation vereint. Des Weiteren wird das Beispiel der Schraubenbemessung verwendet, um weitere Schnittstellen in Python zu erkunden. 
 
-Zusätzlich wurde im Laufe der Bearbeitung der Anwendungsbereich erweitert, sodass neben Excel weitere Schnittstellen erkundet und zum Thema dieser Abschlussarbeit gemacht wurden. 
+Sämtliche Programmierungen werden detailliert aufgeschlüsselt, sodass sie für eigene Zwecke weiterentwickelt werden können und werden so aufbereitet, dass die Grundlagen des Programmierens praxisnah vermittelt werden.
 
 ---
 September 2022
