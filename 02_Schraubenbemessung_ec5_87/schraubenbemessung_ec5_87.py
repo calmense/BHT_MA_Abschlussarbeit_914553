@@ -19,6 +19,7 @@ footer:after{
     position:relative;
     color:grey;
 }
+MainMenu {visibility: hidden;}
 </style>""",unsafe_allow_html=True)
 
 # Eingangsparameter
