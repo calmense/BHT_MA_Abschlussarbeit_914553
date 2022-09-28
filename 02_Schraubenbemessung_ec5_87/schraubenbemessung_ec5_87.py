@@ -35,7 +35,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 L_kled = ['ständig', 'lang', 'mittel', 'kurz', 'sehr kurz']
 L_kmod = [[0.6, 0.7, 0.8, 0.9, 1.1], [
     0.6, 0.7, 0.8, 0.9, 1.1], [0.5, 0.55, 0.65, 0.7, 0.9]]
-L_rho_k = [385, 350, 410, 380, 430, 410, 450, 430]
+L_rho_k = [385, 365, 425, 390, 430, 400, 450, 430]
 L_holzart = ['GL24h', 'GL24c', 'GL28h',
              'GL28c', 'GL32h', 'GL32c', 'GL36h', 'GL36c']
 L_di_axial = [[], [], [], []]
